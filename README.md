@@ -59,15 +59,13 @@ cf apps
 
 ### Expected output
 ```
-Getting apps in org org / space myspace as cfadmin...
-OK
-
 name                     requested state   instances   memory   disk   urls
 web-application          started           1/1         1G       1G     web-application.apps.cf.sgcc.demo.lan
 discovery-news-iccdemo   started           1/1         256M     1G     discovery-news-iccdemo.apps.cf.sgcc.demo.lan
 ```
 
-## All applications support the following REST operations:
+## access the application
+### All applications support the following REST operations:
 
 | URI | Description
 | --- | -----------
@@ -88,7 +86,6 @@ discovery-news-iccdemo   started           1/1         256M     1G     discovery
 | `GET  /security-providers` | The system security providers available to the application
 | `GET  /system-properties` | The system properties available to the application
 
-## access the application
 ### GET /
 ```
 curl -i http://web-application.apps.cf.sgcc.demo.lan/
